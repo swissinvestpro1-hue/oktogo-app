@@ -1,0 +1,53 @@
+{
+ "event_id": "ufc-334",
+ "source": "Sportradar (relevé par Claude)",
+ "updated_at": "2026-11-14T19:10:00Z",
+ "next_check_at": "2026-11-14T22:05:00Z",
+ "fights": {
+  "sr:sport_event:76148720": {
+   "status": "scheduled"
+  },
+  "sr:sport_event:76678756": {
+   "status": "scheduled"
+  },
+  "sr:sport_event:76112386": {
+   "status": "scheduled"
+  },
+  "sr:sport_event:76149222": {
+   "status": "scheduled"
+  },
+  "sr:sport_event:76149608": {
+   "status": "scheduled"
+  },
+  "sr:sport_event:74915874": {
+   "status": "scheduled"
+  },
+  "sr:sport_event:74915876": {
+   "status": "scheduled"
+  },
+  "sr:sport_event:74915878": {
+   "status": "scheduled"
+  },
+  "sr:sport_event:74915880": {
+   "status": "scheduled"
+  },
+  "sr:sport_event:74915882": {
+   "status": "scheduled"
+  },
+  "sr:sport_event:74915884": {
+   "status": "scheduled"
+  },
+  "sr:sport_event:74915886": {
+   "status": "scheduled"
+  },
+  "sr:sport_event:74915888": {
+   "status": "scheduled"
+  }
+ },
+ "log": [
+  {
+   "at": "2026-11-14T19:10:00Z",
+   "text": "Suivi prêt : carte UFC 334 chargée (13 combats). Premier relevé en direct vers 23:05."
+  }
+ ]
+}

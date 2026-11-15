@@ -1,8 +1,8 @@
 {
  "event_id": "ufc-334",
  "source": "Sportradar (relevé par Claude)",
- "updated_at": "2026-11-15T05:07:31Z",
- "next_check_at": "2026-11-15T05:12:31Z",
+ "updated_at": "2026-11-15T05:14:30Z",
+ "next_check_at": "2026-11-15T05:19:30Z",
  "fights": {
   "sr:sport_event:76148720": {
    "status": "finished",

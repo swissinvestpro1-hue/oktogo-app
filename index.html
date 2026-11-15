@@ -166,6 +166,52 @@ header.top{display:grid;grid-template-columns:44px 1fr 44px;align-items:center;g
 .wakeline b{font-family:var(--disp);font-weight:800;font-size:18px;color:var(--w)}
 .why{font-size:11.5px;color:var(--g);text-align:center;margin:-2px 0 0}
 
+
+/* ================= affiche officielle ================= */
+.poster{position:relative;height:420px;overflow:hidden;cursor:pointer;background:#050609}
+.poster.sm{height:330px;cursor:default}
+.poster .pbg{position:absolute;inset:0;background:radial-gradient(60% 70% at 8% 62%,rgba(255,23,61,.62),rgba(149,0,31,.28) 45%,rgba(255,23,61,0) 72%),radial-gradient(60% 70% at 92% 62%,rgba(38,103,255,.62),rgba(20,50,160,.28) 45%,rgba(38,103,255,0) 72%),radial-gradient(40% 30% at 50% 8%,rgba(255,255,255,.18),rgba(255,255,255,0)),linear-gradient(180deg,#0A0B12,#050609)}
+.poster .lights{position:absolute;top:10px;left:8%;right:8%;height:30px;background-image:radial-gradient(circle,rgba(255,255,255,.95) 0 1.6px,rgba(255,255,255,0) 3px);background-size:22px 12px;opacity:.55;filter:blur(.3px);-webkit-mask:linear-gradient(90deg,transparent,#000 20%,#000 80%,transparent);mask:linear-gradient(90deg,transparent,#000 20%,#000 80%,transparent)}
+.poster .cone{position:absolute;top:-30px;width:46%;height:110%;background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,0) 75%);filter:blur(6px);clip-path:polygon(42% 0,58% 0,100% 100%,0 100%)}
+.poster .cone.a{left:2%;transform:rotate(12deg)}.poster .cone.b{right:2%;transform:rotate(-12deg)}
+.poster .smk{position:absolute;inset:auto -10% 22% -10%;height:40%;background:radial-gradient(50% 50% at 25% 60%,rgba(255,80,110,.18),rgba(255,80,110,0)),radial-gradient(50% 50% at 75% 60%,rgba(90,140,255,.18),rgba(90,140,255,0));filter:blur(8px)}
+.poster .cage{position:absolute;left:0;right:0;bottom:0;height:46%;opacity:.16;background-image:linear-gradient(60deg,rgba(255,255,255,.55) 1px,transparent 1px),linear-gradient(-60deg,rgba(255,255,255,.55) 1px,transparent 1px);background-size:16px 28px;-webkit-mask:linear-gradient(180deg,transparent,#000 40%,transparent);mask:linear-gradient(180deg,transparent,#000 40%,transparent)}
+.sil{position:absolute;bottom:96px;width:50%;max-width:250px}
+.poster.sm .sil{bottom:84px;width:42%}
+.sil svg{display:block;width:100%;height:auto}
+.sil.a{left:-1%;filter:drop-shadow(0 0 1.5px #FF4D6D) drop-shadow(0 0 16px rgba(255,23,61,.85))}
+.sil.b{right:-1%;filter:drop-shadow(0 0 1.5px #6E9BFF) drop-shadow(0 0 16px rgba(38,103,255,.9))}
+.sil.b svg{transform:scaleX(-1)}
+.poster .pfade{position:absolute;inset:auto 0 0 0;height:48%;background:linear-gradient(180deg,rgba(5,6,9,0),rgba(5,6,9,.85) 55%,#0C0D14)}
+.poster .wk{white-space:nowrap;font-size:9.5px;font-weight:800;letter-spacing:1.2px;color:#fff;text-transform:uppercase;background:rgba(8,9,15,.55);border:1px solid rgba(255,255,255,.18);padding:6px 10px;border-radius:12px}
+.poster .top{position:absolute;top:14px;left:14px;right:14px;display:flex;align-items:center;justify-content:space-between;gap:8px;z-index:3}
+.poster .ttl{position:absolute;top:48px;left:0;right:0;text-align:center;z-index:3}
+.poster .ttl small{display:block;font-size:10px;font-weight:800;letter-spacing:3px;color:rgba(246,247,251,.8);text-transform:uppercase}
+.poster .ttl b{display:block;font-family:var(--disp);font-style:italic;font-weight:900;font-size:15px;letter-spacing:1.2px;margin-top:3px;text-transform:uppercase;text-shadow:0 2px 12px rgba(0,0,0,.9)}
+.poster .names{position:absolute;left:0;right:0;bottom:14px;z-index:3;padding:0 14px}
+.poster .ribbon{display:flex;justify-content:center;margin-bottom:8px}
+.poster .ribbon span{font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;border-radius:4px;background:linear-gradient(90deg,rgba(255,23,61,.9),rgba(157,53,255,.85),rgba(38,103,255,.9));transform:skewX(-12deg);box-shadow:0 6px 18px -6px rgba(157,53,255,.9)}
+.poster .ribbon span i{display:inline-block;transform:skewX(12deg);font-style:normal}
+.poster .nrow{display:grid;grid-template-columns:1fr 54px 1fr;align-items:end}
+.pn{min-width:0;display:flex;flex-direction:column}
+.pn .fl{font-size:11px;font-weight:700;letter-spacing:1px;color:rgba(246,247,251,.8);text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pn .fl em{font-style:normal;font-size:15px;margin-right:5px;vertical-align:-1px}
+.pn small{font-size:12px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:#fff;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pn b{font-family:var(--disp);font-style:italic;font-weight:900;line-height:.92;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.2px}
+.pn.a b{background:linear-gradient(180deg,#FFFFFF 30%,#FFB3C0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 14px rgba(255,23,61,.75))}
+.pn.b{text-align:right}.pn.b b{background:linear-gradient(180deg,#FFFFFF 30%,#B5CCFF);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 14px rgba(38,103,255,.8))}
+.pn i.bar{display:block;height:3px;width:52px;border-radius:2px;margin-top:7px;background:var(--red);box-shadow:0 0 12px var(--red)}
+.pn.b i.bar{margin-left:auto;background:var(--blue);box-shadow:0 0 12px var(--blue)}
+.pvs{display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.pvs span{font-family:var(--disp);font-style:italic;font-weight:900;font-size:30px;color:#fff;text-shadow:-4px 0 14px rgba(255,23,61,.95),4px 0 14px rgba(38,103,255,.95),0 0 30px rgba(255,255,255,.4)}
+.bust{position:relative;width:44px;height:44px;border-radius:15px;flex:none;overflow:hidden}
+.bust.a{background:radial-gradient(circle at 50% 30%,#FF3355,#5E0016);box-shadow:0 0 16px -2px rgba(255,23,61,.7)}
+.bust.b{background:radial-gradient(circle at 50% 30%,#4D82FF,#0B2270);box-shadow:0 0 16px -2px rgba(38,103,255,.7)}
+.bust svg{position:absolute;left:-2px;bottom:-12px;width:48px;height:auto}
+.bust.b svg{transform:scaleX(-1)}
+.bust .flg{position:absolute;right:-1px;bottom:-1px;font-size:14px;line-height:1;background:rgba(8,9,15,.85);border-radius:6px;padding:1px 2px}
+.who small .fe{font-size:12px;margin-right:3px}
+
 /* ================= filtres ================= */
 .filters{display:flex;gap:8px;overflow-x:auto;margin:0 -16px;padding:2px 16px 4px;scrollbar-width:none}
 .filters::-webkit-scrollbar{display:none}
@@ -410,7 +456,7 @@ nav.tabs .nb{position:absolute;top:12px;left:50%;margin-left:7px;min-width:16px;
       <div class="group"><div class="gi"><div class="lb" id="account" style="font-size:13px;color:var(--g2);line-height:1.5;padding:4px 0"></div></div></div>
       <div class="gtitle">À propos</div>
       <div class="group">
-        <div class="gi"><div class="lb">Version</div><div class="val">OKTOGO 0.7 · test</div></div>
+        <div class="gi"><div class="lb">Version</div><div class="val">OKTOGO 0.8 · test</div></div>
         <div class="gi"><div class="lb">Combat de la semaine<small>Règle fixe : combat pour un titre +3, combat principal +2, co-main +1, événement numéroté +1. En cas d'égalité, le plus proche. Aucune donnée de popularité n'est utilisée.</small></div></div>
         <div class="gi"><div class="lb">Sources<small>Cartes, ordre et statuts : Sportradar. Diffusion en France : annonces publiques de RMC Sport. Lieux : sites des organisateurs.</small></div></div>
       </div>
@@ -463,15 +509,15 @@ var EVENTS = [
    venue:'ABHA Arena, Doha', tv:'RMC Sport', tvUrl:'https://www.rmcsport.tv', cardKnown:true,
    segments:{prelims:{label:'Préliminaires', start:D('2026-11-21T15:00:00Z')}, main_card:{label:'Carte principale', start:D('2026-11-21T18:00:00Z')}},
    fights:[
-    {id:'sr:sport_event:75687412', a:'Jake Matthews', b:'Tahir Abdullayev', seg:'prelims', r:3, w:'poids mi-moyens'},
-    {id:'sr:sport_event:75687418', a:'Amir Albazi', b:'Alessandro Costa', seg:'prelims', r:3, w:'poids mouches'},
-    {id:'sr:sport_event:75687410', a:'Shamil Gaziev', b:'Tallison Teixeira', seg:'prelims', r:3, w:'poids lourds'},
-    {id:'sr:sport_event:75687414', a:'Aleksandre Topuria', b:'Santiago Luna', seg:'main_card', r:3, w:'poids coqs'},
-    {id:'sr:sport_event:75687408', a:'Jared Cannonier', b:'Ikram Aliskerov', seg:'main_card', r:3, w:'poids moyens'},
-    {id:'sr:sport_event:76770300', a:'Kyoji Horiguchi', b:'Asu Almabayev', seg:'main_card', r:3, w:'poids mouches'},
-    {id:'sr:sport_event:75687406', a:'Daniel Hooker', b:'Brian Ortega', seg:'main_card', r:3, w:'poids légers'},
-    {id:'sr:sport_event:75687404', a:'Aljamain Sterling', b:'Kevin Vallejos', seg:'main_card', r:3, w:'poids plumes', co:true},
-    {id:'sr:sport_event:75594644', a:'Jiri Prochazka', b:'Navajo Stirling', seg:'main_card', r:5, w:'poids mi-lourds', main:true}
+    {id:'sr:sport_event:75687412', ca:'AU', cb:'AZ', a:'Jake Matthews', b:'Tahir Abdullayev', seg:'prelims', r:3, w:'poids mi-moyens'},
+    {id:'sr:sport_event:75687418', ca:'IQ', cb:'BR', a:'Amir Albazi', b:'Alessandro Costa', seg:'prelims', r:3, w:'poids mouches'},
+    {id:'sr:sport_event:75687410', ca:'BH', cb:'BR', a:'Shamil Gaziev', b:'Tallison Teixeira', seg:'prelims', r:3, w:'poids lourds'},
+    {id:'sr:sport_event:75687414', ca:'GE', cb:'MX', a:'Aleksandre Topuria', b:'Santiago Luna', seg:'main_card', r:3, w:'poids coqs'},
+    {id:'sr:sport_event:75687408', ca:'US', cb:'RU', a:'Jared Cannonier', b:'Ikram Aliskerov', seg:'main_card', r:3, w:'poids moyens'},
+    {id:'sr:sport_event:76770300', ca:'JP', cb:'KZ', a:'Kyoji Horiguchi', b:'Asu Almabayev', seg:'main_card', r:3, w:'poids mouches'},
+    {id:'sr:sport_event:75687406', ca:'NZ', cb:'US', a:'Daniel Hooker', b:'Brian Ortega', seg:'main_card', r:3, w:'poids légers'},
+    {id:'sr:sport_event:75687404', ca:'US', cb:'AR', a:'Aljamain Sterling', b:'Kevin Vallejos', seg:'main_card', r:3, w:'poids plumes', co:true},
+    {id:'sr:sport_event:75594644', ca:'CZ', cb:'NZ', a:'Jiri Prochazka', b:'Navajo Stirling', seg:'main_card', r:5, w:'poids mi-lourds', main:true}
    ]},
   {id:'ufc-335', org:'UFC', sport:'mma', name:'UFC 335', title:'Carte à venir', numbered:true,
    venue:'T-Mobile Arena, Las Vegas', tv:'RMC Sport', tvUrl:'https://www.rmcsport.tv', cardKnown:false, date:D('2026-12-12T18:00:00Z'), fights:[]},
@@ -714,6 +760,27 @@ function abtn(f,big){
   return '<button class="abtn" data-alarm="'+f.id+'" aria-label="Activer le réveil pour '+esc(f.a+' contre '+f.b)+'">'+I_BELL+'RÉVEIL</button>';
 }
 
+
+// ---------------------------------------------------------------- affiche : pays (Sportradar), silhouettes génériques (aucun visage réel)
+var CNAME={AU:'Australie',AZ:'Azerbaïdjan',IQ:'Irak',BR:'Brésil',BH:'Bahreïn',GE:'Géorgie',MX:'Mexique',US:'États-Unis',RU:'Russie',JP:'Japon',KZ:'Kazakhstan',NZ:'N.-Zélande',AR:'Argentine',CZ:'Tchéquie',FR:'France'};
+function flag(cc){if(!cc)return '';return String.fromCodePoint(0x1F1E6+cc.charCodeAt(0)-65,0x1F1E6+cc.charCodeAt(1)-65);}
+var SIL='<svg viewBox="0 0 220 300" aria-hidden="true"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1D1F2A"/><stop offset="1" stop-color="#050609"/></linearGradient></defs><g fill="url(#sg)" stroke="url(#sg)" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M50 116 C62 99 86 92 104 91 L126 91 C148 92 166 99 174 113 C184 133 180 161 166 196 C157 220 153 252 153 300 L68 300 C68 252 64 222 56 196 C44 162 40 135 50 116 Z"/><path stroke="none" d="M100 70 L124 70 L130 98 L94 98 Z"/><ellipse stroke="none" cx="113" cy="56" rx="21" ry="25"/><path fill="none" stroke-width="27" d="M167 118 C179 136 185 152 183 168"/><path fill="none" stroke-width="22" d="M183 168 C193 150 199 128 197 112"/><ellipse stroke="none" cx="197" cy="98" rx="18" ry="21"/><path fill="none" stroke-width="27" d="M57 122 C55 150 61 170 76 180"/><path fill="none" stroke-width="22" d="M76 180 C98 172 116 138 126 106"/><ellipse stroke="none" cx="131" cy="92" rx="17" ry="20"/></g></svg>';
+function poster(f,o){
+  var ev=f.ev, q=qOf(f), s=stOf(f), L=Math.max(last(f.a).length,last(f.b).length);
+  var fs=L<=6?36:L<=7?31:L<=8?27:L<=9?23:L<=10?21:18; if(o.sm)fs=Math.round(fs*.92);
+  var rib=(f.title?'Combat pour le titre':f.main?'Combat principal':f.co?'Co-main event':ev.segments[f.seg].label)+' · '+f.r+' rounds';
+  return '<div class="poster'+(o.sm?' sm':'')+'"'+(o.open?' data-open="'+f.id+'" role="button" aria-label="Voir le détail du combat"':'')+'>'+
+    '<div class="pbg"></div><div class="cone a"></div><div class="cone b"></div><div class="lights"></div><div class="smk"></div><div class="cage"></div>'+
+    '<div class="sil a">'+SIL+'</div><div class="sil b">'+SIL+'</div><div class="pfade"></div>'+
+    '<div class="top">'+org(ev)+(o.badge||'')+'</div>'+
+    '<div class="ttl"><small>'+esc(ev.name)+'</small><b>'+esc(cap(dShort(q?q.p50:evStart(ev))))+' · '+esc(ev.venue.split(', ').pop())+'</b></div>'+
+    '<div class="names"><div class="ribbon"><span><i>'+esc(rib)+'</i></span></div><div class="nrow">'+
+      '<div class="pn a"><span class="fl">'+(f.ca?'<em>'+flag(f.ca)+'</em>'+esc(CNAME[f.ca]||''):'')+'</span><small>'+esc(firstN(f.a))+'</small><b style="font-size:'+fs+'px">'+esc(last(f.a))+'</b><i class="bar"></i></div>'+
+      '<div class="pvs"><span>VS</span></div>'+
+      '<div class="pn b"><span class="fl">'+(f.cb?esc(CNAME[f.cb]||'')+'<em style="margin:0 0 0 5px">'+flag(f.cb)+'</em>':'')+'</span><small>'+esc(firstN(f.b))+'</small><b style="font-size:'+fs+'px">'+esc(last(f.b))+'</b><i class="bar"></i></div>'+
+    '</div></div></div>';
+}
+function bust(side,cc){return '<div class="bust '+side+'">'+SIL.replace('id="sg"','id="sg'+side+'"').replace(/url\(#sg\)/g,'url(#sg'+side+')')+(cc?'<span class="flg">'+flag(cc)+'</span>':'')+'</div>';}
 // ---------------------------------------------------------------- combats à venir (triés)
 function upcoming(){
   var items=[];
@@ -752,16 +819,9 @@ function renderHome(){
     var cta = s.status!=='scheduled' ? '<button class="cta" disabled><span>COMBAT COMMENCÉ</span></button>'
       : on ? '<button class="cta on'+pop(f.id)+'" data-alarm="'+f.id+'"><span class="chk">'+I_CHK+'</span><span>RÉVEIL ACTIVÉ · '+hm(w)+'</span></button>'
       : '<button class="cta" data-arm="'+f.id+'">'+I_BELL.replace('width="18" height="18"','width="22" height="22"')+'<span>ACTIVER LE RÉVEIL</span></button>';
-    setHTML(box,'<article class="hero gb">'+
-      '<div class="stage" data-open="'+f.id+'" role="button" aria-label="Voir le détail du combat">'+
-        '<div class="lr"></div><div class="spot a"></div><div class="spot b"></div><div class="oct">'+OCT+'</div>'+
-        '<div class="ginit a">'+esc(initials(f.a))+'</div><div class="ginit b">'+esc(initials(f.b))+'</div><div class="fade"></div>'+
-        '<div class="top">'+org(ev)+'<span class="wk">'+(hp.week?'Combat de la semaine':'Prochain grand combat')+'</span></div>'+
-        '<div class="vsrow"><div class="fn a"><small>'+esc(firstN(f.a))+'</small><b style="font-size:'+fs+'">'+esc(last(f.a))+'</b><span class="bar"></span></div>'+
-        '<div class="vs"><span>VS</span></div><div class="fn b"><small>'+esc(firstN(f.b))+'</small><b style="font-size:'+fs+'">'+esc(last(f.b))+'</b><span class="bar"></span></div></div>'+
-      '</div>'+
+    setHTML(box,'<article class="hero gb">'+poster(f,{open:true,badge:'<span class="wk">'+(hp.week?'Combat de la semaine':'Prochain grand combat')+'</span>'})+
       '<div class="hinfo">'+
-        '<div class="meta"><span><b>'+esc(ev.name)+'</b> · '+esc(ev.venue)+'</span><span>'+I_CAL+'<b>'+esc(cap(dLong(q?q.p50:evStart(ev))))+'</b></span><span>'+I_CLK+'≈ <b>'+hm(q&&q.p50)+'</b> heure locale</span><span>'+I_TV+'<b>'+esc(ev.tv||'Diffusion à confirmer')+'</b></span></div>'+
+        '<div class="meta"><span>'+I_PIN+esc(ev.venue)+'</span><span>'+I_CLK+'≈ <b>'+hm(q&&q.p50)+'</b> heure locale</span><span>'+I_TV+'<b>'+esc(ev.tv||'Diffusion à confirmer')+'</b></span></div>'+
         '<div class="cdbox">'+cd+'</div>'+
         (s.status==='scheduled'?'<div class="wakeline"><span>Réveil estimé'+(on?'':' ('+esc(delayLabel(prefs.delay).toLowerCase())+')')+'</span><b>'+hm(w)+'</b></div>':'')+
         cta+
@@ -778,8 +838,8 @@ function renderHome(){
     return '<article class="fcard rv'+(on?' armed':'')+'"><div class="bgx"></div>'+
       '<button class="tapzone" data-open="'+f.id+'" aria-label="Détail '+esc(f.a+' contre '+f.b)+'">'+
         '<div class="row1">'+org(ev)+'<span class="ev">'+esc(ev.name)+' · '+esc(f.main?'Combat principal':f.co?'Co-main':ev.segments[f.seg].label)+'</span>'+(s.status==='in_progress'?chip(s):'<span>'+esc(cap(dShort(q?q.p50:evStart(ev))))+'</span>')+'</div>'+
-        '<div class="duel"><div class="who a"><div class="av a">'+esc(initials(f.a))+'</div><div class="nm"><small>'+esc(firstN(f.a))+'</small><b style="--nf:'+nfs(f.a)+'">'+esc(last(f.a))+'</b></div></div><div class="vsm">VS</div>'+
-        '<div class="who b"><div class="av b">'+esc(initials(f.b))+'</div><div class="nm"><small>'+esc(firstN(f.b))+'</small><b style="--nf:'+nfs(f.b)+'">'+esc(last(f.b))+'</b></div></div></div>'+
+        '<div class="duel"><div class="who a">'+bust('a',f.ca)+'<div class="nm"><small>'+esc(firstN(f.a))+'</small><b style="--nf:'+nfs(f.a)+'">'+esc(last(f.a))+'</b></div></div><div class="vsm">VS</div>'+
+        '<div class="who b">'+bust('b',f.cb)+'<div class="nm"><small>'+esc(firstN(f.b))+'</small><b style="--nf:'+nfs(f.b)+'">'+esc(last(f.b))+'</b></div></div></div>'+
       '</button>'+
       '<div class="row3"><div class="tinfo">≈ <b>'+hm(q&&q.p50)+'</b> · '+esc(ev.tv||'Diffusion à confirmer')+'<br>Réveil estimé : <b>'+hm(wakeOf(f))+'</b></div>'+abtn(f)+'</div></article>';
   }).join('');
@@ -800,10 +860,7 @@ function renderSheet(){
   var fs=hfs(f);
   var w=on&&a.wakeMs!=null?a.wakeMs:(q?wakeFor(q,d):null);
   var h='<div class="shtop"><button class="ibtn" data-close="1" aria-label="Fermer">'+I_X+'</button><span class="eyebrow">Détail du combat</span><span style="width:44px"></span></div>'+
-  '<article class="hero gb" style="margin-bottom:16px"><div class="stage" style="height:250px;cursor:default"><div class="lr"></div><div class="spot a"></div><div class="spot b"></div><div class="oct">'+OCT+'</div>'+
-    '<div class="ginit a">'+esc(initials(f.a))+'</div><div class="ginit b">'+esc(initials(f.b))+'</div><div class="fade"></div>'+
-    '<div class="top"><span style="display:flex;align-items:center;gap:8px">'+org(ev)+'<span class="chip glass">'+esc(ev.name)+'</span></span>'+(chip(s)||'<span class="wk">'+esc(f.main?'Combat principal':f.co?'Co-main':ev.segments[f.seg].label)+'</span>')+'</div>'+
-    '<div class="vsrow"><div class="fn a"><small>'+esc(firstN(f.a))+'</small><b style="font-size:'+fs+'">'+esc(last(f.a))+'</b><span class="bar"></span></div><div class="vs"><span>VS</span></div><div class="fn b"><small>'+esc(firstN(f.b))+'</small><b style="font-size:'+fs+'">'+esc(last(f.b))+'</b><span class="bar"></span></div></div></div>'+
+  '<article class="hero gb" style="margin-bottom:16px">'+poster(f,{sm:true,badge:chip(s)||''})+
     '<div class="hinfo"><div class="meta"><span>'+esc(cap(f.w))+' · '+f.r+' rounds</span><span>'+I_CAL+'<b>'+esc(cap(dLong(q?q.p50:evStart(ev))))+'</b></span><span>'+I_PIN+esc(ev.venue)+'</span></div></div></article>';
   if(s.status==='scheduled'&&q){
     var bars='';for(var i=0;i<4;i++)bars+='<i'+(i<conf[0]?' class="on"':'')+'></i>';

@@ -1001,8 +1001,9 @@ function renderProfile(){
 // =====================================================================================
 // RENDU GLOBAL + COMPTES À REBOURS
 // =====================================================================================
+function fitNames(){document.querySelectorAll('.pn b,.who b').forEach(function(el){var fs=parseFloat(getComputedStyle(el).fontSize),k=0;while(el.scrollWidth>el.clientWidth+1&&fs>11&&k<20){fs-=1;el.style.fontSize=fs+'px';k++;}});}
 function renderAll(){
-  renderHome();renderEvents();renderReveils();renderFavs();renderProfile();renderSheet();updCd();
+  renderHome();renderEvents();renderReveils();renderFavs();renderProfile();renderSheet();updCd();fitNames();
   var n=activeAlarms().length; $('hdrDot').classList.toggle('hidden',!n); var nd=$('navDot'); nd.classList.toggle('hidden',!n); nd.textContent=n||'';
 }
 function updCd(){

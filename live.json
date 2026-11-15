@@ -1,46 +1,70 @@
 {
  "event_id": "ufc-334",
  "source": "Sportradar (relevé par Claude)",
- "updated_at": "2026-11-14T22:06:30Z",
- "next_check_at": "2026-11-14T22:26:00Z",
+ "updated_at": "2026-11-15T05:07:31Z",
+ "next_check_at": "2026-11-15T05:12:31Z",
  "fights": {
-  "sr:sport_event:74915874": {
-   "status": "scheduled"
-  },
-  "sr:sport_event:74915876": {
-   "status": "scheduled"
-  },
-  "sr:sport_event:74915878": {
-   "status": "scheduled"
-  },
-  "sr:sport_event:74915880": {
-   "status": "scheduled"
-  },
-  "sr:sport_event:74915882": {
-   "status": "scheduled"
-  },
-  "sr:sport_event:74915884": {
-   "status": "scheduled"
-  },
-  "sr:sport_event:74915886": {
-   "status": "scheduled"
-  },
-  "sr:sport_event:74915888": {
-   "status": "scheduled"
-  },
-  "sr:sport_event:76112386": {
-   "status": "scheduled"
-  },
   "sr:sport_event:76148720": {
-   "status": "scheduled"
-  },
-  "sr:sport_event:76149222": {
-   "status": "scheduled"
-  },
-  "sr:sport_event:76149608": {
-   "status": "scheduled"
+   "status": "finished",
+   "started_at": "2026-11-14T22:15:00Z",
+   "ended_at": "2026-11-14T22:32:00Z"
   },
   "sr:sport_event:76678756": {
+   "status": "finished",
+   "started_at": "2026-11-14T22:46:00Z",
+   "ended_at": "2026-11-14T23:03:00Z"
+  },
+  "sr:sport_event:76112386": {
+   "status": "finished",
+   "started_at": "2026-11-14T23:17:00Z",
+   "ended_at": "2026-11-14T23:20:23Z"
+  },
+  "sr:sport_event:76149222": {
+   "status": "finished",
+   "started_at": "2026-11-14T23:40:00Z",
+   "ended_at": "2026-11-14T23:57:00Z"
+  },
+  "sr:sport_event:76149608": {
+   "status": "finished",
+   "started_at": "2026-11-15T00:16:00Z",
+   "ended_at": "2026-11-15T00:19:20Z"
+  },
+  "sr:sport_event:74915874": {
+   "status": "finished",
+   "started_at": "2026-11-15T00:44:00Z",
+   "ended_at": "2026-11-15T00:45:53Z"
+  },
+  "sr:sport_event:74915876": {
+   "status": "finished",
+   "started_at": "2026-11-15T01:08:00Z",
+   "ended_at": "2026-11-15T01:25:00Z"
+  },
+  "sr:sport_event:74915878": {
+   "status": "finished",
+   "started_at": "2026-11-15T01:39:00Z",
+   "ended_at": "2026-11-15T01:53:54Z"
+  },
+  "sr:sport_event:74915880": {
+   "status": "finished",
+   "started_at": "2026-11-15T02:29:00Z",
+   "ended_at": "2026-11-15T02:46:00Z"
+  },
+  "sr:sport_event:74915882": {
+   "status": "finished",
+   "started_at": "2026-11-15T03:09:00Z",
+   "ended_at": "2026-11-15T03:26:00Z"
+  },
+  "sr:sport_event:74915884": {
+   "status": "finished",
+   "started_at": "2026-11-15T03:52:00Z",
+   "ended_at": "2026-11-15T04:09:00Z"
+  },
+  "sr:sport_event:74915886": {
+   "status": "finished",
+   "started_at": "2026-11-15T04:33:00Z",
+   "ended_at": "2026-11-15T04:52:29Z"
+  },
+  "sr:sport_event:74915888": {
    "status": "scheduled"
   }
  },
@@ -52,6 +76,58 @@
   {
    "at": "2026-11-14T22:06:30Z",
    "text": "Relevé : aucun combat commencé, 13 combats au programme."
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Relevés interrompus entre 23:06 et 06:07 (incident du suivi automatique). Rattrapage."
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Elder vs Sanches : terminé"
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Heili vs Diaz : terminé"
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Chiasson vs Mesquita : terminé"
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Gordon vs Costa : terminé"
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Johnson vs Almeida : terminé"
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Miller vs McKinney : terminé"
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Dober vs Duncan : terminé"
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Thompson vs Radtke : terminé"
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Hasan vs Gurule : terminé"
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Medic vs Holland : terminé"
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Borralho vs Belgaroui : terminé"
+  },
+  {
+   "at": "2026-11-15T05:07:31Z",
+   "text": "Harrison vs Nunes : terminé"
   }
  ]
 }
